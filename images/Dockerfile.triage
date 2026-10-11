@@ -1,0 +1,17 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+# requirements.txt is at the project root (build context)
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy only the three scripts from a_Monday/
+COPY scripts/agent_logistics.py scripts/auth.py scripts/secure_triage_api.py scripts/rate_limit.py ./
+
+# So `import k_auth` and friends resolve as top-level modules
+ENV PYTHONPATH=/app
+
+EXPOSE 8000
+
+CMD ["uvicorn", "m_secure_triage_api:app", "--host", "0.0.0.0", "--port", "8000"]

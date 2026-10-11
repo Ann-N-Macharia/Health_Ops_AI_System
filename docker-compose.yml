@@ -1,0 +1,80 @@
+  services:
+    agent:
+      image: afyaplus-agent:1.0.0
+      build: 
+        context: .
+        dockerfile: images/Dockerfile.agent
+
+      container_name: afyaplus-agent
+
+      expose:
+        - "8001"
+
+      ports:
+        - "8001:8001"
+
+      env_file: .env
+
+      healthcheck:
+        test: ["CMD", "python", "-c",
+              "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health')"]
+        interval: 30s
+        timeout: 3s
+        retries: 3
+        start_period: 15s
+
+      deploy:
+        resources:
+          limits:
+            cpus: '1.0'
+            memory: 512M
+          reservations:
+            memory: 256M
+
+      labels:
+        afyaplus.service: triage-agent
+        afyaplus.version: "1.0.0"
+        afyaplus.cost-center: clinical-ai
+        afyaplus.env: staging
+        afyaplus.owner: mercy
+      
+    triage:
+      image: afyaplus-triage:1.0.0
+      build: 
+        context: .
+        dockerfile: images/Dockerfile.triage
+
+      container_name: afyaplus-triage
+
+      ports:
+        - "8000:8000"
+
+      env_file: .env
+
+      depends_on:
+        - agent
+
+      healthcheck:
+        test: ["CMD", "python", "-c",
+              "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+        interval: 30s
+        timeout: 3s
+        retries: 3
+        start_period: 15s
+
+      deploy:
+        resources:
+          limits:
+            cpus: '1.0'
+            memory: 512M
+          reservations:
+            memory: 256M
+
+      labels:
+        afyaplus.service: triage-api
+        afyaplus.version: "1.0.0"
+        afyaplus.cost-center: clinical-ai
+        afyaplus.env: staging
+        afyaplus.owner: mercy
+
+
