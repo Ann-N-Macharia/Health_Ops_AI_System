@@ -1,12 +1,40 @@
 # llm_gateway.py
 import os
+from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from enum import Enum
 from pydantic import BaseModel, Field
 from openai import OpenAI
 from dotenv import load_dotenv
 
+#Local modules
+from modules.prompt_loader import load_prompt, load_pin
+
 load_dotenv()
+
+#ENV VARIABLES:
+PROMPT_VERSION = os.environ.get('AGENT_TRIAGE__PROMPT_VERSION')
+HEALTH_TIP_MODEL = os.environ["LLM_MODEL"]
+HEALTH_TIP_MAX_TOKENS = 60
+HEALTH_TIP_TEMPERATURE = 0.
+
+#Prompt validation - Load and validate the prompt from the prompts directory
+
+# prompt path
+PROMPTS_DIR = Path('prompts')
+HEALTH_TIP_SYSTEM_PROMPT = load_prompt('agent_triage', PROMPT_VERSION)[0]
+HEALTH_TIP_SYSTEM_PROMPT_HASH = load_prompt('agent_triage', PROMPT_VERSION)[1]
+
+#load pin
+pin = load_pin()["agent_logistics_prompt"]
+PINNED_VERSION = pin.get('version')
+PINNED_HASH = pin.get('prompt_sha256')
+
+#Checks
+ok_hash = (PINNED_HASH==HEALTH_TIP_SYSTEM_PROMPT_HASH)
+ok_version = (PINNED_VERSION==PROMPT_VERSION)
+
+
 
 app = FastAPI(title="AfyaPlus LLM Gateway", version="1.0.0")
 
@@ -17,30 +45,7 @@ client = OpenAI(
     api_key=os.environ["LLM_API_KEY"]
 )
 
-# --- All agent config lives here. One place. ---
 
-HEALTH_TIP_SYSTEM_PROMPT = (
-    """You are a triage assistant for community health workers in Kenya.
-
-Given a patient message and a county, return a JSON object with exactly two fields:
-
-- "urgency": one of "low", "medium", "high".
-    low    = self-care at home, monitor
-    medium = see a clinician within 24-48 hours
-    high   = seek care immediately / emergency
-
-- "advice": one or two short sentences of non-diagnostic guidance, appropriate
-    for the county context. Do not name a specific disease. Do not prescribe
-    medication. Do not ask follow-up questions.
-
-Return ONLY the JSON object. No prose, no markdown fences."""
-)
-
-HEALTH_TIP_MODEL = os.environ["LLM_MODEL"]
-HEALTH_TIP_MAX_TOKENS = 60
-HEALTH_TIP_TEMPERATURE = 0.7
-
-# -------------------------------------------------
 
 class HealthTipRequest(BaseModel):
     patient_message: str = Field(min_length=5, max_length=1000)
@@ -58,7 +63,25 @@ class HealthTipResponse(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"status": "ok"}
+    if not ok_hash or not ok_version:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                'status': 'degraded',
+                'prompt_version': PROMPT_VERSION,
+                'prompt_sha256': HEALTH_TIP_SYSTEM_PROMPT_HASH,
+                'hash_match': ok_hash,
+                'version_match': ok_version,
+            }
+        )
+
+    return {
+    'status': 'ok',
+    'prompt_version': PROMPT_VERSION,
+    'prompt_sha256': HEALTH_TIP_SYSTEM_PROMPT_HASH,
+    'model': os.environ.get('LLM_MODEL', 'gpt-4o-mini'),
+}
+
 
 @app.post("/health-tip", response_model=HealthTipResponse)
 def health_tip(body: HealthTipRequest):
