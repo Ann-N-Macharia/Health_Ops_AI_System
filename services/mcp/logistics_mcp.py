@@ -82,9 +82,8 @@ def get_delivery_eta(from_clinic_id: str, to_clinic_id: str) -> str:
                        "km": km, "eta_minutes": round(km / 40 * 60)})
 
 if __name__ == "__main__":
-    # mcp.run()
        mcp.run(
         transport="streamable-http",
-        host="127.0.0.1",
+        host="0.0.0.0",
         port=8006
     )

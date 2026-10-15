@@ -24,7 +24,7 @@ async def run_logistics_agent(question: str):
             model=os.getenv("LLM_MODEL"),
             temperature=0,
             base_url=os.getenv("LLM_BASE_URL"),    # Ollama
-            api_key=os.getenv("LLM_API_KEY")         # dummy key
+            api_key=os.getenv("LLM_API_KEY")       # dummy key
         )
         
         agent = create_agent(model, tools)

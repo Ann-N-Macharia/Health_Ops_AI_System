@@ -3,8 +3,9 @@ from pathlib import Path
 import hashlib
 import json
 
-PROMPTS_DIR = Path('prompts')
+ROOT_DIR = Path(__file__).parent.parent
 
+PROMPTS_DIR = ROOT_DIR / 'services/triage/prompts'
 
 def load_prompt(name: str, version: str) -> str:
     path = PROMPTS_DIR / f'{name}_v{version}.txt'
@@ -14,7 +15,7 @@ def load_prompt(name: str, version: str) -> str:
     prompt_hash = hashlib.sha256(prompt.encode()).hexdigest()
     return prompt, prompt_hash
 
-def load_pin(path: str = 'PROMPTS_DIR / pin.json') -> dict:
+def load_pin(path: str = PROMPTS_DIR / 'pin.json') -> dict:
     with open(path) as f:
         return json.load(f)
 
@@ -22,4 +23,5 @@ def load_pin(path: str = 'PROMPTS_DIR / pin.json') -> dict:
 #testing
 if __name__ == '__main__':
     text = load_prompt('agent_logistics', '1.1.0')
+    print('prompt', text)
     print('chars', len(text))

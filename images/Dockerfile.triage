@@ -7,11 +7,17 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy only the three scripts from a_Monday/
-COPY scripts/agent_logistics.py scripts/auth.py scripts/secure_triage_api.py scripts/rate_limit.py ./
+#modules:
+COPY modules/prompt_loader.py modules/auth.py modules/rate_limit.py modules/
+#agents:
+COPY agents/tools/triage.py agents/tools/logistics.py  agents/tools/
+#services:
+COPY services/triage/ services/triage/
+
 
 # So `import k_auth` and friends resolve as top-level modules
 ENV PYTHONPATH=/app
 
-EXPOSE 8000
+EXPOSE 8080
 
-CMD ["uvicorn", "m_secure_triage_api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "services.triage.app:app", "--host", "0.0.0.0", "--port", "8080"]

@@ -1,9 +1,9 @@
 # secure_triage_api.py - the triage service with the door locked
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel, Field
-from scripts.auth import check_password, create_token, current_user
-from scripts.rate_limit import check_rate_limit
-from scripts.agent_logistics import run_logistics_agent
+from modules.auth import check_password, create_token, current_user
+from modules.rate_limit import check_rate_limit
+from agents.tools.logistics import run_logistics_agent
 import os
 import httpx
 import uuid

@@ -12,8 +12,10 @@ from modules.prompt_loader import load_prompt, load_pin
 
 load_dotenv()
 
-#ENV VARIABLES:
-PROMPT_VERSION = os.environ.get('AGENT_TRIAGE__PROMPT_VERSION')
+ROOT_DIR = Path(__file__).parent.parent.parent
+
+#ENV VARIABLES
+PROMPT_VERSION = os.environ.get('AGENT_TRIAGE_PROMPT_VERSION')
 HEALTH_TIP_MODEL = os.environ["LLM_MODEL"]
 HEALTH_TIP_MAX_TOKENS = 60
 HEALTH_TIP_TEMPERATURE = 0.
@@ -21,12 +23,12 @@ HEALTH_TIP_TEMPERATURE = 0.
 #Prompt validation - Load and validate the prompt from the prompts directory
 
 # prompt path
-PROMPTS_DIR = Path('prompts')
+PROMPTS_DIR = ROOT_DIR / 'services/triage/prompts'
 HEALTH_TIP_SYSTEM_PROMPT = load_prompt('agent_triage', PROMPT_VERSION)[0]
 HEALTH_TIP_SYSTEM_PROMPT_HASH = load_prompt('agent_triage', PROMPT_VERSION)[1]
 
 #load pin
-pin = load_pin()["agent_logistics_prompt"]
+pin = load_pin()["agent_triage_prompt"]
 PINNED_VERSION = pin.get('version')
 PINNED_HASH = pin.get('prompt_sha256')
 
