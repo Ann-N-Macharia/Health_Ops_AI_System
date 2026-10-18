@@ -10,6 +10,8 @@ import uuid
 import logging
 from dotenv import load_dotenv
 
+from modules.redactor import mask_pii
+
 load_dotenv()  # Load environment variables from .env file
 
 app = FastAPI(title="AfyaPlus Triage API (Security Inbuilt)", version="1.1.0")
@@ -42,11 +44,12 @@ def login(body: LoginRequest):
 def triage(request: TriageRequest, user: dict = Depends(current_user)):
     check_rate_limit(user["sub"])
 
+    compliant_request = mask_pii(request.patient_message)
     try:
         response = httpx.post(
             f"{LLM_GATEWAY_URL}/health-tip",
             json=
-                {"patient_message": request.patient_message,
+                {"patient_message": compliant_request,
              "county": request.county
              },
             timeout=30.0,

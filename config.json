@@ -1,0 +1,14 @@
+{
+  "_comment": "Single place to rename this project. No other starter file needs an edit.",
+  "project_name": "AfyaPlus - Integrated AI health-operations system.",
+  "tools": ["triage", "ask-logistics"],
+  "route_keywords": {
+    "triage": ["urgency", "medical", "advice", "health", "condition"],
+    "ask-logistics": ["ship", "delivery", "logistics", "track", "order", "shipment", "where is my order", "delay"]
+  },
+  "endpoint_health":  "/health",
+  "endpoint_triage": "/triage",
+  "endpoint_logistics": "/ask-logistics",
+  "fixture_size": 300,
+  "labels": ["triage", "logistics_lookup"]
+}

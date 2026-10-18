@@ -1,0 +1,300 @@
+{"id": "T-001", "text": "fever", "label": "triage"}
+{"id": "T-002", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-003", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-004", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-005", "text": "symptom check", "label": "triage"}
+{"id": "T-006", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-007", "text": "symptom check", "label": "triage"}
+{"id": "T-008", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-009", "text": "symptom check", "label": "triage"}
+{"id": "T-010", "text": "follow-up needed", "label": "triage"}
+{"id": "T-011", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-012", "text": "follow-up needed", "label": "triage"}
+{"id": "T-013", "text": "follow-up needed", "label": "triage"}
+{"id": "T-014", "text": "symptom check", "label": "triage"}
+{"id": "T-015", "text": "symptom check", "label": "triage"}
+{"id": "T-016", "text": "follow-up needed", "label": "triage"}
+{"id": "T-017", "text": "general question", "label": "triage"}
+{"id": "T-018", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-019", "text": "follow-up needed", "label": "triage"}
+{"id": "T-020", "text": "follow-up needed", "label": "triage"}
+{"id": "T-021", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-022", "text": "follow-up needed", "label": "triage"}
+{"id": "T-023", "text": "general question", "label": "triage"}
+{"id": "T-024", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-025", "text": "follow-up needed", "label": "triage"}
+{"id": "T-026", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-027", "text": "follow-up needed", "label": "triage"}
+{"id": "T-028", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-029", "text": "follow-up needed", "label": "triage"}
+{"id": "T-030", "text": "general question", "label": "triage"}
+{"id": "T-031", "text": "general question", "label": "triage"}
+{"id": "T-032", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-033", "text": "follow-up needed", "label": "triage"}
+{"id": "T-034", "text": "symptom check", "label": "triage"}
+{"id": "T-035", "text": "symptom check", "label": "triage"}
+{"id": "T-036", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-037", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-038", "text": "follow-up needed", "label": "triage"}
+{"id": "T-039", "text": "follow-up needed", "label": "triage"}
+{"id": "T-040", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-041", "text": "general question", "label": "triage"}
+{"id": "T-042", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-043", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-044", "text": "symptom check", "label": "triage"}
+{"id": "T-045", "text": "symptom check", "label": "triage"}
+{"id": "T-046", "text": "general question", "label": "triage"}
+{"id": "T-047", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-048", "text": "general question", "label": "triage"}
+{"id": "T-049", "text": "follow-up needed", "label": "triage"}
+{"id": "T-050", "text": "general question", "label": "triage"}
+{"id": "T-051", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-052", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-053", "text": "symptom check", "label": "triage"}
+{"id": "T-054", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-055", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-056", "text": "symptom check", "label": "triage"}
+{"id": "T-057", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-058", "text": "symptom check", "label": "triage"}
+{"id": "T-059", "text": "symptom check", "label": "triage"}
+{"id": "T-060", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-061", "text": "follow-up needed", "label": "triage"}
+{"id": "T-062", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-063", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-064", "text": "symptom check", "label": "triage"}
+{"id": "T-065", "text": "follow-up needed", "label": "triage"}
+{"id": "T-066", "text": "symptom check", "label": "triage"}
+{"id": "T-067", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-068", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-069", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-070", "text": "general question", "label": "triage"}
+{"id": "T-071", "text": "follow-up needed", "label": "triage"}
+{"id": "T-072", "text": "general question", "label": "triage"}
+{"id": "T-073", "text": "follow-up needed", "label": "triage"}
+{"id": "T-074", "text": "follow-up needed", "label": "triage"}
+{"id": "T-075", "text": "symptom check", "label": "triage"}
+{"id": "T-076", "text": "follow-up needed", "label": "triage"}
+{"id": "T-077", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-078", "text": "general question", "label": "triage"}
+{"id": "T-079", "text": "symptom check", "label": "triage"}
+{"id": "T-080", "text": "symptom check", "label": "triage"}
+{"id": "T-081", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-082", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-083", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-084", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-085", "text": "follow-up needed", "label": "triage"}
+{"id": "T-086", "text": "symptom check", "label": "triage"}
+{"id": "T-087", "text": "general question", "label": "triage"}
+{"id": "T-088", "text": "general question", "label": "triage"}
+{"id": "T-089", "text": "symptom check", "label": "triage"}
+{"id": "T-090", "text": "symptom check", "label": "triage"}
+{"id": "T-091", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-092", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-093", "text": "symptom check", "label": "triage"}
+{"id": "T-094", "text": "general question", "label": "triage"}
+{"id": "T-095", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-096", "text": "symptom check", "label": "triage"}
+{"id": "T-097", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-098", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-099", "text": "follow-up needed", "label": "triage"}
+{"id": "T-100", "text": "symptom check", "label": "triage"}
+{"id": "T-101", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-102", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-103", "text": "follow-up needed", "label": "triage"}
+{"id": "T-104", "text": "general question", "label": "triage"}
+{"id": "T-105", "text": "follow-up needed", "label": "triage"}
+{"id": "T-106", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-107", "text": "symptom check", "label": "triage"}
+{"id": "T-108", "text": "general question", "label": "triage"}
+{"id": "T-109", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-110", "text": "follow-up needed", "label": "triage"}
+{"id": "T-111", "text": "general question", "label": "triage"}
+{"id": "T-112", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-113", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-114", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-115", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-116", "text": "follow-up needed", "label": "triage"}
+{"id": "T-117", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-118", "text": "follow-up needed", "label": "triage"}
+{"id": "T-119", "text": "symptom check", "label": "triage"}
+{"id": "T-120", "text": "follow-up needed", "label": "triage"}
+{"id": "T-121", "text": "general question", "label": "triage"}
+{"id": "T-122", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-123", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-124", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-125", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-126", "text": "follow-up needed", "label": "triage"}
+{"id": "T-127", "text": "general question", "label": "triage"}
+{"id": "T-128", "text": "general question", "label": "triage"}
+{"id": "T-129", "text": "symptom check", "label": "triage"}
+{"id": "T-130", "text": "general question", "label": "triage"}
+{"id": "T-131", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-132", "text": "general question", "label": "triage"}
+{"id": "T-133", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-134", "text": "follow-up needed", "label": "triage"}
+{"id": "T-135", "text": "general question", "label": "triage"}
+{"id": "T-136", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-137", "text": "general question", "label": "triage"}
+{"id": "T-138", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-139", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-140", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-141", "text": "general question", "label": "triage"}
+{"id": "T-142", "text": "follow-up needed", "label": "triage"}
+{"id": "T-143", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-144", "text": "symptom check", "label": "triage"}
+{"id": "T-145", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-146", "text": "follow-up needed", "label": "triage"}
+{"id": "T-147", "text": "general question", "label": "triage"}
+{"id": "T-148", "text": "symptom check", "label": "triage"}
+{"id": "T-149", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-150", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-151", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-152", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-153", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-154", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-155", "text": "symptom check", "label": "triage"}
+{"id": "T-156", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-157", "text": "follow-up needed", "label": "triage"}
+{"id": "T-158", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-159", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-160", "text": "follow-up needed", "label": "triage"}
+{"id": "T-161", "text": "general question", "label": "triage"}
+{"id": "T-162", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-163", "text": "general question", "label": "triage"}
+{"id": "T-164", "text": "symptom check", "label": "triage"}
+{"id": "T-165", "text": "follow-up needed", "label": "triage"}
+{"id": "T-166", "text": "general question", "label": "triage"}
+{"id": "T-167", "text": "follow-up needed", "label": "triage"}
+{"id": "T-168", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-169", "text": "symptom check", "label": "triage"}
+{"id": "T-170", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-171", "text": "follow-up needed", "label": "triage"}
+{"id": "T-172", "text": "general question", "label": "triage"}
+{"id": "T-173", "text": "symptom check", "label": "triage"}
+{"id": "T-174", "text": "general question", "label": "triage"}
+{"id": "T-175", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-176", "text": "general question", "label": "triage"}
+{"id": "T-177", "text": "symptom check", "label": "triage"}
+{"id": "T-178", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-179", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-180", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-181", "text": "follow-up needed", "label": "triage"}
+{"id": "T-182", "text": "general question", "label": "triage"}
+{"id": "T-183", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-184", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-185", "text": "symptom check", "label": "triage"}
+{"id": "T-186", "text": "symptom check", "label": "triage"}
+{"id": "T-187", "text": "general question", "label": "triage"}
+{"id": "T-188", "text": "general question", "label": "triage"}
+{"id": "T-189", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-190", "text": "general question", "label": "triage"}
+{"id": "T-191", "text": "symptom check", "label": "triage"}
+{"id": "T-192", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-193", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-194", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-195", "text": "symptom check", "label": "triage"}
+{"id": "T-196", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-197", "text": "follow-up needed", "label": "triage"}
+{"id": "T-198", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-199", "text": "general question", "label": "triage"}
+{"id": "T-200", "text": "follow-up needed", "label": "triage"}
+{"id": "T-201", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-202", "text": "symptom check", "label": "triage"}
+{"id": "T-203", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-204", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-205", "text": "follow-up needed", "label": "triage"}
+{"id": "T-206", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-207", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-208", "text": "general question", "label": "triage"}
+{"id": "T-209", "text": "follow-up needed", "label": "triage"}
+{"id": "T-210", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-211", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-212", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-213", "text": "follow-up needed", "label": "triage"}
+{"id": "T-214", "text": "follow-up needed", "label": "triage"}
+{"id": "T-215", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-216", "text": "follow-up needed", "label": "triage"}
+{"id": "T-217", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-218", "text": "general question", "label": "triage"}
+{"id": "T-219", "text": "follow-up needed", "label": "triage"}
+{"id": "T-220", "text": "symptom check", "label": "triage"}
+{"id": "T-221", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-222", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-223", "text": "general question", "label": "triage"}
+{"id": "T-224", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-225", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-226", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-227", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-228", "text": "general question", "label": "triage"}
+{"id": "T-229", "text": "general question", "label": "triage"}
+{"id": "T-230", "text": "follow-up needed", "label": "triage"}
+{"id": "T-231", "text": "symptom check", "label": "triage"}
+{"id": "T-232", "text": "symptom check", "label": "triage"}
+{"id": "T-233", "text": "symptom check", "label": "triage"}
+{"id": "T-234", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-235", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-236", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-237", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-238", "text": "follow-up needed", "label": "triage"}
+{"id": "T-239", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-240", "text": "follow-up needed", "label": "triage"}
+{"id": "T-241", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-242", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-243", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-244", "text": "follow-up needed", "label": "triage"}
+{"id": "T-245", "text": "follow-up needed", "label": "triage"}
+{"id": "T-246", "text": "follow-up needed", "label": "triage"}
+{"id": "T-247", "text": "follow-up needed", "label": "triage"}
+{"id": "T-248", "text": "symptom check", "label": "triage"}
+{"id": "T-249", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-250", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-251", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-252", "text": "symptom check", "label": "triage"}
+{"id": "T-253", "text": "symptom check", "label": "triage"}
+{"id": "T-254", "text": "symptom check", "label": "triage"}
+{"id": "T-255", "text": "general question", "label": "triage"}
+{"id": "T-256", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-257", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-258", "text": "symptom check", "label": "triage"}
+{"id": "T-259", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-260", "text": "symptom check", "label": "triage"}
+{"id": "T-261", "text": "follow-up needed", "label": "triage"}
+{"id": "T-262", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-263", "text": "follow-up needed", "label": "triage"}
+{"id": "T-264", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-265", "text": "symptom check", "label": "triage"}
+{"id": "T-266", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-267", "text": "symptom check", "label": "triage"}
+{"id": "T-268", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-269", "text": "symptom check", "label": "triage"}
+{"id": "T-270", "text": "symptom check", "label": "triage"}
+{"id": "T-271", "text": "symptom check", "label": "triage"}
+{"id": "T-272", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-273", "text": "follow-up needed", "label": "triage"}
+{"id": "T-274", "text": "symptom check", "label": "triage"}
+{"id": "T-275", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-276", "text": "general question", "label": "triage"}
+{"id": "T-277", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-278", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-279", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-280", "text": "follow-up needed", "label": "triage"}
+{"id": "T-281", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-282", "text": "symptom check", "label": "triage"}
+{"id": "T-283", "text": "general question", "label": "triage"}
+{"id": "T-284", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-285", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-286", "text": "follow-up needed", "label": "triage"}
+{"id": "T-287", "text": "symptom check", "label": "triage"}
+{"id": "T-288", "text": "general question", "label": "triage"}
+{"id": "T-289", "text": "follow-up needed", "label": "triage"}
+{"id": "T-290", "text": "where is my order", "label": "ask-logistics"}
+{"id": "T-291", "text": "follow-up needed", "label": "triage"}
+{"id": "T-292", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-293", "text": "track delivery", "label": "ask-logistics"}
+{"id": "T-294", "text": "general question", "label": "triage"}
+{"id": "T-295", "text": "general question", "label": "triage"}
+{"id": "T-296", "text": "shipment delay", "label": "ask-logistics"}
+{"id": "T-297", "text": "general question", "label": "triage"}
+{"id": "T-298", "text": "follow-up needed", "label": "triage"}
+{"id": "T-299", "text": "symptom check", "label": "triage"}
+{"id": "T-300", "text": "shipment delay", "label": "ask-logistics"}

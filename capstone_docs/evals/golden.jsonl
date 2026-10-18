@@ -1,0 +1,7 @@
+{"id": "G-001", "text": "fever", "expected_label": "triage"}
+{"id": "G-002", "text": "track delivery", "expected_label": "ask-logistics"}
+{"id": "G-003", "text": "where is my order", "expected_label": "ask-logistics"}
+{"id": "G-004", "text": "shipment delay", "expected_label": "ask-logistics"}
+{"id": "G-005", "text": "symptom check", "expected_label": "triage"}
+{"id": "G-006", "text": "where is my order", "expected_label": "ask-logistics"}
+

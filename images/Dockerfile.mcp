@@ -9,6 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy only the three scripts from a_Monday/
 #services:
 COPY services/mcp/logistics_mcp.py ./
+COPY clinics.json ./
 
 # So `import k_auth` and friends resolve as top-level modules
 ENV PYTHONPATH=/app
