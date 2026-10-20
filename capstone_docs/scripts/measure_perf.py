@@ -19,8 +19,9 @@ def main():
         start = time.perf_counter()
         try:
             urllib.request.urlopen(args.url, timeout=5)
-        except Exception:
-            pass
+        except urllib.error.URLError as exc:
+            print(f"URL check failed: {exc}")
+            raise
         samples.append(time.perf_counter() - start)
 
     samples.sort()
