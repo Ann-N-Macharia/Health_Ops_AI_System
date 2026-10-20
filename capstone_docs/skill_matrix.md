@@ -1,6 +1,5 @@
 <!-- Change for your project: the "My module / file" column. Keep headings and rows. -->
 # Skill coverage matrix
-
 | Skill | Week resource to open | My module / file | Required / Optional |
 | --- | --- | --- | --- |
 | API or agent path | Week 6 triage API lab | services/triage | Required |

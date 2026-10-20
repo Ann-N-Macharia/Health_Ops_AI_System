@@ -24,11 +24,11 @@ The same API answers logistics questions with a LangChain agent that calls tools
 pytest -q
 
 ## Docs
-- docs/architecture.md
-- docs/deployment.md
-- docs/cost_analysis.md
-- docs/user_guide.md
-- docs/build_checkpoint.md
+- docs/architecture.md - [link](docs\architecture.md)
+- docs/deployment.md - [link](docs\deployment.md)
+- docs/cost_analysis.md - [link](docs\cost_analysis.md)
+- docs/user_guide.md - [link](docs\user_guide.md)
+- docs/build_checkpoint.md - [link](docs\build_checkpoint.md)
 
 ## Testing
 - unit default: pytest -q
