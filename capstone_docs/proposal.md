@@ -1,6 +1,6 @@
 # Capstone proposal
 ## Path
-AfyaPlus Module 4 Capstone: integrated AI health-operations system
+**AfyaPlus Module 4 Capstone**: integrated AI health-operations system
 
 ## Problem
 AfyaPlus, a network of healthcare facilities, faces challenges in timely patient prioritization and coordinating logistics across locations. Limited visibility into stock availability and routes can delay care and resource allocation.
