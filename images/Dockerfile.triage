@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy only the three scripts from a_Monday/
 #modules:
-COPY modules/prompt_loader.py modules/auth.py modules/rate_limit.py modules/
+COPY modules/ modules/
 #agents:
 COPY agents/tools/triage.py agents/tools/logistics.py  agents/tools/
 #services:
