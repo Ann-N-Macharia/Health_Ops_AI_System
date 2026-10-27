@@ -13,14 +13,14 @@ class Client:
 
 
 if __name__ == "__main__":
-    token_client = Client(base_url="http://localhost:8080")
+    token_client = Client(base_url="http://127.0.0.1:8080")
     token_client_response = token_client.post("token", 
                                             data={"username": "mercy", "password": "logistics2026"}
                                             )
     token = token_client_response.get("access_token")
     print(token)
 
-    logistics_client = Client(base_url="http://localhost:8080")
+    logistics_client = Client(base_url="http://127.0.0.1:8080")
     #  
     try:
         logistics_client_response = logistics_client.post("ask-logistics", 

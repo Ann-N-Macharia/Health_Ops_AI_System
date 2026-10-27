@@ -98,15 +98,15 @@ def health_tip(body: HealthTipRequest):
             temperature=HEALTH_TIP_TEMPERATURE,
             response_format={"type": "json_object"},   # ← enforce JSON
         )
-    except Exception:
-        raise HTTPException(503, "The model is unavailable. Please try again shortly.")
+    except Exception as e:
+        raise HTTPException(503, "The model is unavailable. Please try again shortly.") from e
     
     raw = response.choices[0].message.content
 
     try:
         parsed = HealthTipResponse.model_validate_json(raw)
-    except Exception:
+    except Exception as e:
         # Model returned valid JSON but wrong shape, or invalid JSON entirely.
-        raise HTTPException(502, "The model returned an unusable response.")
+        raise HTTPException(502, "The model returned an unusable response.") from e 
 
     return parsed
