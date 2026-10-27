@@ -1,5 +1,3 @@
-# Module 4 Capstone: AfyaPlus (or domain alternative)
-
 ## Overview
 AfyaPlus is an integrated AI health-operations system for partner clinics.
 Its  secured FastAPI triage API (JWT login, rate limiting, PII masking) gives patients' messages an urgency level and short advice through an LLM gateway whose prompt is version-pinned. 
@@ -7,18 +5,6 @@ The same API answers logistics questions with a LangChain agent that calls tools
 
 ## Project path
 - AfyaPlus - Integrated AI health-operations system. 
-
-
-## Week reuse (open these)
-- Weeks 1-5: ...
-- Week 6: path
-- Week 7: path
-- Week 8: pins path
-- Week 9: smoke path
-- Week 10: catalog OR poster path
-
-## Dataset
-- fixtures/: 300 rows. No production scrape.
 
 ## Quick start
 pytest -q
@@ -42,7 +28,7 @@ Three commands: start the service, curl /health, curl /triage. See docs/user_gui
 ```bash
 python services/mcp/logistics_mcp.py & uvicorn agents.tools.triage:app --port 8001 & uvicorn services.triage.app:app --port 8080 &
 curl localhost:8080/health
-curl -X POST localhost:8080/triage -H "Content-Type: application/json" -H "Authorization: Bearer $(curl -s -X POST localhost:8080/token -H 'Content-Type: application/json' -d '{"username":"mercy","password":"logistics2026"}' | python -c 'import sys,json;print(json.load(sys.stdin)["access_token"])')" -d '{"patient_message":"I have had a fever for two days","county":"Kisumu"}'
+curl -X POST localhost:8080/triage -H "Content-Type: application/json" -H "Authorization: Bearer $(curl -s -X POST localhost:8080/token -H 'Content-Type: application/json' -d '{"username":"$USERNAME","password":"$PASSWORD"}' | python -c 'import sys,json;print(json.load(sys.stdin)["access_token"])')" -d '{"patient_message":"I have had a fever for two days","county":"Kisumu"}'
 ```
 
 ### Dockerised (`config/app.env` and `config/agent.env` filled in)
